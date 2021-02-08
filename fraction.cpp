@@ -116,29 +116,3 @@ void Fraction::disp() const{
 std::ostream& operator<<(std::ostream& cout, const Fraction& fract1){
     return cout<<fract1.m_numerator<<"/"<<fract1.m_denominator;}
 
-/**
- * 
- * @param argc 
- * @param argv 
- * @return int 
- */
-int main(int argc, char **argv)
-{
-    Fraction fract1(2,3);
-    Fraction fract2(1,4);
-    Fraction fract3;
-    fract3=fract1+fract2;
-    Fraction fract4(2,10);
-    fract4.simplify();
-    fract4.disp();
-    fract3.disp();
-    fract1.disp();
-    std::cout<<fract2;
-    /**
-     * @brief Construct a new testing::Init Google Test object
-     * 
-     */
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-    return 0;
-}
